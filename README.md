@@ -22,36 +22,3 @@ A GitHub-ready portfolio of sanitized n8n workflows.
 5. Replace placeholders like `REPLACE_WITH_YOUR_ID`.
 6. Test the workflow manually before activating it.
 
-## Security
-
-These workflows were sanitized before export:
-- Credential objects removed.
-- Pinned execution data removed.
-- Webhook IDs replaced.
-- Known hardcoded API keys replaced with environment variable references.
-- Personal emails and private Google Drive/Sheets URLs replaced where detected.
-
-Still, before publishing publicly, run:
-
-```bash
-grep -Rni "apikey\|api_key\|token\|secret\|password\|webhookId\|credentials\|gmail\|@gmail" .
-```
-
-## Suggested Repository Name
-
-`n8n-ai-automation-portfolio`
-
-## Suggested GitHub Commands
-
-```bash
-git init
-git add .
-git commit -m "Add sanitized n8n workflow portfolio"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/n8n-ai-automation-portfolio.git
-git push -u origin main
-```
-
-## License
-
-MIT License suggested. Add a `LICENSE` file before publishing if you want others to reuse these workflows.
